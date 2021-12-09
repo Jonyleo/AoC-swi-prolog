@@ -198,7 +198,6 @@ readWord(InStream, W) :- !,
          get_code(InStream,Char),
          checkCharAndReadRest(Char,Chars,InStream),
          sort(Chars,W).
-         %atom_codes(W,CharsS).
 
 checkCharAndReadRest(44,[],_):-  !.
    
